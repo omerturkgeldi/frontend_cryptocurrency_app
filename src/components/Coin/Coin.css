@@ -14,9 +14,9 @@
 }
 
 .coin-image {
-    max-height: 50%;
+    max-height: 35%;
     position: relative;
-    top: 25%;
+    top: 30%;
 }
 
 .coin-symbol {
