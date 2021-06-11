@@ -33,28 +33,23 @@ function App() {
   return (
     <div className="coin-app">
       <Search handleChange={handleChange} />
-      <div class="container">
-        <div class="row">
-          {filteredCoins.map((coin) => {
-            return (
-              <div  style={{display:'flex', justifyContent:'center'}}  class="col-sm col-md-12 col-lg-6">
-                <Coin
-                  key={coin.id}
-                  name={coin.name}
-                  image={coin.image}
-                  symbol={coin.symbol}
-                  marketcap={coin.market_cap}
-                  price={coin.current_price}
-                  priceChange={coin.price_change_percentage_24h}
-                  volume={coin.total_volume}
-                  low_24h={coin.low_24h}
-                  high_24h={coin.high_24h}
-                />
-              </div>
-            );
-          })}
-        </div>
-      </div>
+
+      {filteredCoins.map((coin) => {
+        return (
+          <Coin
+            key={coin.id}
+            name={coin.name}
+            image={coin.image}
+            symbol={coin.symbol}
+            marketcap={coin.market_cap}
+            price={coin.current_price}
+            priceChange={coin.price_change_percentage_24h}
+            volume={coin.total_volume}
+            low_24h={coin.low_24h}
+            high_24h={coin.high_24h}
+          />
+        );
+      })}
     </div>
   );
 }

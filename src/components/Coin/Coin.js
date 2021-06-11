@@ -13,7 +13,7 @@ const Coin = ({
   high_24h,
 }) => {
   return ( 
-    <div className="card w-5 0 mb-4">
+    <div className="card w-75 mb-4">
       <div className="row g-0">
         <div className="d-flex justify-content-center col-md-4">
           <img className="coin-image" src={image} alt="crypto" />
